@@ -24,11 +24,15 @@ body{
 }
 .link_lista{
     padding:  0 1em;
+    
 }
 .link_lista a{
     text-decoration: none;
     font-weight: bold;
     color: black;
+}
+.link_lista a:hover{
+    color: rgb(39, 39, 170);
 }
 .link_meio{
     border-right: 1px solid gray;
