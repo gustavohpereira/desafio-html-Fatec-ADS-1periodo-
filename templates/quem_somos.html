@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/reset.css') }} ">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/estilo.css') }}">
     <title>Quem Somos</title>
 </head>
 <body>
     <header class="cabeçalho">
-        <img src="img/logo.png" class="header_img">
+        <img src="{{url_for('static',filename='img/logo.png')}}" class="header_img">
         <ul class="header_links">
             <li class="link_lista">
-                <a href="index.html">Home</a>
+                <a href="/">Home</a>
                 
             </li>
             <li class="link_lista link_meio">
-                <a href="quem_somos.html">Quem somos</a>
+                <a href="/quemSomos">Quem somos</a>
                 
             </li>
             <li class="link_lista">
-                <a href="contato.html">Contato</a>
+                <a href="/contatos">Contato</a>
                 
             </li>
         </ul>

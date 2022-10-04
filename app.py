@@ -1,7 +1,13 @@
 from distutils.log import debug
 from flask import Flask, render_template , url_for
 
+
+
 app = Flask(__name__)
+if __name__ == "__main__":
+    app.run()
+
+    
 
 
 
@@ -22,5 +28,4 @@ def quemSomos():
     return render_template("quem_somos.html")
 
 
-if __name__ == '__app__':
-    app.run(debug=True)
+
